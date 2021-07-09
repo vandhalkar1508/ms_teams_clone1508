@@ -1,5 +1,5 @@
 {
-  "name": "ms-teams-clone",
+  "name": "msteamsclone",
   "version": "0.0.1",
   "engines": {
     "node": "14.16.1",
@@ -15,7 +15,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "node server.js",
     "watch": "nodemon --watch \"src/\" --exec \"node src/server.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
     

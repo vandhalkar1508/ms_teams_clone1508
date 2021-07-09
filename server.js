@@ -3,10 +3,10 @@ const express = require( 'express' );
 const app = express();
 const server = require( 'http' ).Server( app );
 const io = require( 'socket.io' )( server );
-const stream = require( './assets/js/stream' );
+const stream = require( './src/assets/js/stream' );
 const path = require( 'path' );
 
-const port = process.env.port ||5000;
+const port = process.env.PORT|| 5000;
 
 app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 
