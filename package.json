@@ -6,7 +6,7 @@
     "npm": "6.14.12"
   },
   "description": "......",
-  "main": "src/server.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.4.0"
