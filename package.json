@@ -1,6 +1,9 @@
 {
   "name": "ms-teams-clone",
   "version": "0.0.1",
+  "engines": {
+    "node": "14.16.1"
+  },
   "description": "......",
   "main": "src/server.js",
   "dependencies": {
