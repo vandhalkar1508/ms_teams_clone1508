@@ -6,6 +6,8 @@ const io = require( 'socket.io' )( server );
 const stream = require( './assets/js/stream' );
 const path = require( 'path' );
 
+const port = process.env.port ||5000;
+
 app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 
 //render the html file on the root
@@ -15,5 +17,5 @@ app.get( '/', ( req, res ) => {
 
 io.of( '/stream' ).on( 'connection', stream );
 
-server.listen( 3040 );
+server.listen( port);
 
