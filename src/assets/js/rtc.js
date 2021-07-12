@@ -4,10 +4,12 @@ window.addEventListener( 'load', () => {
     const room = h.getQString( location.href, 'room' );
     const username = sessionStorage.getItem( 'username' );
 
+    //create the room when the participan enters all the information.
     if ( !room ) {
         document.querySelector( '#room-create' ).attributes.removeNamedItem( 'hidden' );
     }
 
+    // join the room.
     else if ( !username ) {
         document.querySelector( '#username-set' ).attributes.removeNamedItem( 'hidden' );
     }
@@ -71,7 +73,6 @@ window.addEventListener( 'load', () => {
                             h.setLocalStream( stream );
                         }
 
-                        //save my stream
                         myStream = stream;
 
                         stream.getTracks().forEach( ( track ) => {
@@ -102,7 +103,6 @@ window.addEventListener( 'load', () => {
 
         function getAndSetUserStream() {
             h.getUserFullMedia().then( ( stream ) => {
-                //save my stream
                 myStream = stream;
 
                 h.setLocalStream( stream );

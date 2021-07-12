@@ -10,6 +10,7 @@ window.addEventListener( 'load', () => {
         let roomName = document.querySelector( '#room-name' ).value;
         let yourName = document.querySelector( '#your-name' ).value;
 
+        //if the user provides all the parameters then proceed ahead.
         if ( roomName && yourName ) {
             document.querySelector( '#err-msg' ).innerHTML = "";
             sessionStorage.setItem( 'username', yourName );
