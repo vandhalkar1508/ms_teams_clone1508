@@ -8,8 +8,7 @@ body {
     background-image: url("./bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Merriweather', serif;
-  
+    font-family: "Merriweather", serif;
 
     .heading {
         width: 100%;
@@ -34,7 +33,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-content: space-between;
-        max-height: fit-content; 
+        max-height: fit-content;
 
         .div1 {
             width: 50%;
@@ -42,8 +41,6 @@ body {
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            
-
 
             div {
                 margin-left: 2em;
@@ -55,32 +52,30 @@ body {
                 color: rgb(9, 26, 27);
                 button {
                     width: 60%;
-                    background-color:gray;
-                   color: black;
-                   border: 2px solid #06625c;
-                   font-weight: 700;
+                    background-color: gray;
+                    color: black;
+                    border: 2px solid #06625c;
+                    font-weight: 700;
                 }
-                button:hover{
+                button:hover {
                     background-color: #06625c;
                     color: whitesmoke;
-                   
                 }
-                input{
+                input {
                     width: 60%;
                     background-color: rgb(212, 231, 231);
                     color: rgb(8, 50, 52);
                     border: 3px solid #06625c;
                 }
-                label{
-                    font: size 25px; ;
+                label {
+                    font: size 25px;
                     font-weight: 700;
                     color: rgb(6, 33, 34);
-
                 }
-                .grid1{
+                .grid1 {
                     color: red;
                 }
-                .grid5{
+                .grid5 {
                     color: rgb(3, 53, 56);
                 }
             }
@@ -93,18 +88,18 @@ body {
             align-items: center;
             justify-content: center;
             max-height: 700px;
-                img {
-                    margin: 2em;
-                    width: 80%;
-                    max-height: 400px;
-                    border-radius: 4em;
-                    align-items: center;
+            img {
+                margin: 2em;
+                width: 80%;
+                max-height: 400px;
+                border-radius: 4em;
+                align-items: center;
             }
-            h3,h6{
-                color:rgb(8, 83, 78);
-                padding:0.4em;
+            h3,
+            h6 {
+                color: rgb(8, 83, 78);
+                padding: 0.4em;
             }
-           
         }
     }
     #username-set {
@@ -118,35 +113,33 @@ body {
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 padding: 2em;
             }
-            input{
+            input {
                 width: 60%;
                 background-color: rgb(212, 231, 231);
                 color: rgb(8, 50, 52);
                 border: 3px solid #06625c;
             }
-            label{
-                font: size 25px; ;
+            label {
+                font: size 25px;
                 font-weight: 700;
                 color: rgb(6, 33, 34);
-
             }
             button {
                 width: 60%;
-                background-color:gray;
-               color: black;
-               border: 2px solid #06625c;
-               font-weight: 700;
+                background-color: gray;
+                color: black;
+                border: 2px solid #06625c;
+                font-weight: 700;
             }
-            button:hover{
+            button:hover {
                 background-color: #06625c;
                 color: whitesmoke;
-               
             }
         }
         .div2 {
@@ -157,16 +150,17 @@ body {
             align-items: center;
             justify-content: center;
             max-height: 700px;
-                img {
-                    margin: 2em;
-                    width: 80%;
-                    max-height: 400px;
-                    border-radius: 4em;
-                    align-items: center;
+            img {
+                margin: 2em;
+                width: 80%;
+                max-height: 400px;
+                border-radius: 4em;
+                align-items: center;
             }
-            h3,h6{
-                color:rgb(8, 83, 78);
-                padding:0.4em;
+            h3,
+            h6 {
+                color: rgb(8, 83, 78);
+                padding: 0.4em;
             }
         }
     }
@@ -179,47 +173,40 @@ body {
         height: 75%;
         background-color: rgb(230, 247, 245);
 
-     
+        #videos {
+            max-height: 100%;
+            max-width: 80;
+            width: 80%;
 
-            #videos {
-                max-height:100% ;
-                max-width: 80;
-                width: 80%;
-              
-                display: flex;
-                flex-direction: row;
-              justify-content: center;
-              align-content: center;
-                   flex-wrap: wrap;
-               
-                
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
 
-                div{
-                   max-width: 300px;
-                   max-height: 250px;
-                   min-width: 250px;
-                   width: 300px;
-                   height: 250px;
-                  
-                   flex-grow: 1;
-                   
+            div {
+                max-width: 300px;
+                max-height: 250px;
+                min-width: 250px;
+                width: 300px;
+                height: 250px;
 
-                   video{
-                       width: 100%;
-                       height: 100%;
-                   }
-                    
+                flex-grow: 1;
+
+                video {
+                    width: 100%;
+                    height: 100%;
                 }
             }
-    
-        
-        #chat-pane{
+        }
+
+        #chat-pane {
             background-color: rgba(0, 0, 0, 0.646);
             max-height: 100%;
             width: 20%;
-            padding-right: 0 ;
+            padding-right: 0;
             margin-right: 0;
-            #head{
+            #head {
                 height: 10%;
                 color: rgb(30, 145, 132);
                 font-weight: 400;
@@ -228,37 +215,33 @@ body {
                 justify-content: center;
                 background-color: rgb(31, 32, 32);
             }
-            #chat-messages{
+            #chat-messages {
                 width: 100%;
                 height: 80%;
                 display: flex;
                 flex-direction: column;
 
-                div{
+                div {
                     width: 90%;
                     margin: 0.3em;
                     border-radius: 1em;
                     background-color: rgb(24, 27, 27);
-                    div{
+                    div {
                         width: 90%;
                         color: whitesmoke;
                         font-size: 15px;
-                        div{
+                        div {
                             font-size: 11px;
                         }
                     }
-
                 }
-                
             }
 
-            #ii{
+            #ii {
                 position: fixed bottom;
                 height: 10%;
             }
         }
-
-       
     }
     #navbar {
         display: flex;
@@ -275,8 +258,7 @@ body {
             color: black;
             border-radius: 20%;
             font-size: 14px;
-            border: 2px solid black;  
-
+            border: 2px solid black;
         }
     }
 }

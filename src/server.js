@@ -1,21 +1,21 @@
 //get all the needed packages and libraries
-const express = require( 'express' );
+const express = require('express');
 const app = express();
-const server = require( 'http' ).Server( app );
-const io = require( 'socket.io' )( server );
-const stream = require( './assets/js/stream' );
-const path = require( 'path' );
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
+const stream = require('./assets/js/stream');
+const path = require('path');
 
-const port = process.env.PORT|| 3030;
+const port = process.env.PORT || 3030;
 
-app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 //render the html file on the root
-app.get( '/', ( req, res ) => {
-    res.sendFile( __dirname + '/index.html' );
-} );
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 
-io.of( '/stream' ).on( 'connection', stream );
+io.of('/stream').on('connection', stream);
 
-server.listen( port);
+server.listen(port);
 
