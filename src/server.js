@@ -6,7 +6,7 @@ const io = require( 'socket.io' )( server );
 const stream = require( './assets/js/stream' );
 const path = require( 'path' );
 
-const port = process.env.PORT|| 5000;
+const port = process.env.PORT|| 3030;
 
 app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 

@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel='stylesheet' href='assets/css/app.css' type="text/css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <script src='/socket.io/socket.io.js'></script>
     <script type="module" src='assets/js/eventlist.js'></script>
     <script type="module" src='assets/js/rtc.js'></script>
@@ -26,10 +28,10 @@
 <body>
 
     <div class="heading">
-        <p>MS_TEAMS_CLONE</p>
+        <p>MS Teams Clone</p>
     </div>
 
-    <div class= "meet" id='room-create' hidden>
+    <div class="meet" id='room-create' hidden>
 
         <div class="div1">
             <div class="grid1">
@@ -43,7 +45,7 @@
 
             <div class="grid3">
                 <label for="your-name">Your Name</label>
-                <input type="text" id='your-name'  placeholder="Your Name">
+                <input type="text" id='your-name' placeholder="Your Name">
             </div>
 
             <div class="grid4">
@@ -54,9 +56,10 @@
         </div>
 
         <div class="div2">
-                <img src="./assets/images/img7.jpg" alt="">
-                <h3>Get the link that you can share</h3>
-                <h6>Click <b>New Meeting </b>button get a link that you can share <br> to people that you want to meet with</b></h5>
+            <img src="./assets/images/img1.jpg" alt="">
+            <h3>Get the link that you can share</h3>
+            <h6>Click <b>New Meeting </b>button get a link that you can share <br> to people that you want to meet
+                with</b></h5>
         </div>
     </div>
 
@@ -64,7 +67,7 @@
 
     <div class="second" id='username-set' hidden>
 
-        <div class="div1"> 
+        <div class="div1">
             <div>
                 <span id='err-msg-username'></span>
             </div>
@@ -80,29 +83,32 @@
         </div>
 
         <div class="div2">
-            <img src="assets/images/img6.jpg" alt="">
+            <img src="./assets/images/img1.jpg" alt="">
+            <h3>Get the link that you can share</h3>
+            <h6>Click <b>New Meeting </b>button get a link that you can share <br> to people that you want to meet
+                with</b></h5>
         </div>
 
     </div>
 
     <div class="room-comm" id="main-room" hidden>
-        <div id='main-section'>
+       
             <div id='videos'>
-                <div >
-                    <video  id='local' volume='0' autoplay muted></video>
+                <div>
+                    <video id='local' volume='0' autoplay muted></video>
                 </div>
             </div>
-        </div>
+        
 
-        <div id='chat-pane' >
+        <div id='chat-pane'>
             <div id="head">
-                <div >CHAT</div>
+                <div>CHAT</div>
             </div>
 
             <div id='chat-messages'></div>
 
-            <div id="ii" >
-                <textarea id='chat-input' class="form-control rounded-0 chat-box border-info" rows='3'
+            <div id="ii">
+                <textarea id='chat-input' class="form-control" 
                     placeholder="Type here..."></textarea>
             </div>
         </div>
@@ -122,7 +128,7 @@
         </button>
     </div>
 
-    
+
 </body>
 
 </html>

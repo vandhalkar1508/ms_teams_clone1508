@@ -50,7 +50,6 @@ export default {
     closeVideo( elemId ) {
         if ( document.getElementById( elemId ) ) {
             document.getElementById( elemId ).remove();
-            this.adjustVideoElemSize();
         }
     },
 
@@ -111,13 +110,11 @@ export default {
         let chatMsgDiv = document.querySelector( '#chat-messages' );
         let contentAlign = 'justify-content-end';
         let senderName = 'You';
-        let msgBg = 'bg-white';
+       
 
         if ( senderType === 'remote' ) {
             contentAlign = 'justify-content-start';
             senderName = data.sender;
-            msgBg = '';
-
         }
 
         let infoDiv = document.createElement( 'div' );
@@ -125,12 +122,9 @@ export default {
         infoDiv.innerHTML = `${ senderName } - ${ moment().format( ' h:mm a' ) }`;
 
         let colDiv = document.createElement( 'div' );
-        colDiv.className = `${ msgBg }`;
         colDiv.innerHTML = xssFilters.inHTMLData( data.msg ).autoLink( { target: "_blank", rel: "nofollow"});
 
         let rowDiv = document.createElement( 'div' );
-        rowDiv.className = `row ${ contentAlign } mb-2`;
-
 
         colDiv.appendChild( infoDiv );
         rowDiv.appendChild( colDiv );
